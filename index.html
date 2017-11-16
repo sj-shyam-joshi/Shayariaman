@@ -13,6 +13,7 @@
         body{
             width: 1175px;
             margin: auto;
+            box-shadow: 5px 5px 25px;
         }
         header{
             /*position: fixed;*/
@@ -258,7 +259,8 @@
 
     <header>
         <img src="images/selfie.JPG">
-        <h2 class="shayariaman"><span>Sh</span>a<span>y</span>ari<span>am</span>an.com</h2>        
+        <h2 class="shayariaman"><span>Sh</span>a<span>y</span>ari<span>am</span>an.com</h2>  
+        <i class="fa fa-heart"></i>
         <nav>
             <ul>
                 <li><a href="html/home.html">HOME</a></li>
@@ -287,7 +289,7 @@
 
 
                 
-            <iframe src="html/latestshayari.html"></iframe>  
+            <iframe id="iframe" src="html/latestshayari.html"></iframe>  
                 
                <div id="comments"> <h3>Leave a Reply</h3>
                    <textarea type="text-area" placeholder="Comment:"></textarea>
@@ -341,8 +343,14 @@
             links.addEventListener('click',function(e){
               e.preventDefault();
                var href= e.target.href;
+               if(href)
                iFrame.src = href;    
             })
+ 
+           function resizeIframe(height) {
+            document.getElementById('iframe').height = height;
+           }
+
         </script>
         
         
