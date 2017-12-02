@@ -11,18 +11,25 @@
           
         }
         body{
-            width: 1175px;
-            margin: auto;
-            box-shadow: 5px 5px 25px;
+           /* width: 1175px;
+            margin: auto;*/  
+            padding: 0;
+            margin:0;
+            
+            height:100%;
+            overflow: hidden;
         }
         header{
-            /*position: fixed;*/
+            
+            position: relative;
             width: 1175px;
-           /* top: 0;*/
-            /*z-index: 999;*/
+            margin:0 auto;
+            
+            top: 0;
+            z-index: 999;
             background-color: white;
             border-top: 1px solid black;
-            box-shadow: 2px 2px 25px gray;
+           /* box-shadow: 2px 2px 25px gray;*/
            
             
         }
@@ -36,19 +43,18 @@
             box-shadow: 2px 2px 20px gray;
         }
         header h2{
-            display: inline-block;
             font-size: 50px;
-            font-family:sans-serif;
+            font-family: cursive;
             margin: 0;
             position: relative;
             top: 5px;
-            left: 230px;
+            margin-left: 432px;
         }
         header h2:first-letter{
             font-size: 80px;
         }
         header span{
-            color: red
+            color: red;
         }
         header nav{
             clear: both;
@@ -122,19 +128,24 @@
         
         main{
            
-            display: flex;
-            background-color: #edd4d8;
-           /* margin-top: -27px;*/
-            padding-top: 10px;
+          /*  display: flex;*/
+            /*background-color: #edd4d8;*/
+            /*margin-top: -27px;*/
+           /* padding-top: 10px;*/
            
             /*opacity: 0.9;*/
+             height:100%;
+             position:relative;
+             top:-159px;
+             overflow: auto;
+             z-index: 900;
         }
         
-          main section:nth-of-type(1) {flex: 8;
+          main section:nth-of-type(1) {/*flex: 8;*/
              
-             
-              /*display: inline-block;*/
-            /*  width: 800px;*/
+              border-right: 1px dotted gray;
+              display: inline-block;
+              width: 800px;
              
             padding-left:40px;
             padding-right: 40px;
@@ -187,46 +198,46 @@
             box-shadow: 5px 5px 25px black;
         }
        
-        main section:nth-of-type(2){
-           /* position: fixed;
-            display: inline-block;*/
+        #cate{
+            position: absolute;
+            right: 0px;
+            display: inline-block;
             
             
-           /* top: 170px;*/
-           /* width: 270px;*/
-         /*  vertical-align: top;*/
-            flex: 3;
-            border: solid 1px gray;
+            top: 170px;
+            width: 270px;
+           vertical-align: top;
+            /*flex: 3;*/
+           /* border: solid 1px gray;*/
             border-radius: 10px;
             margin-left: 30px;
-            margin-right: 10px;
         
             text-align: left;
         }
-        main section:nth-of-type(2) h3{
+        #cate h3{
             background-color: #f52727;
             color: white;
             padding: 4px;
             width: 100px;
             
         }
-        main section:nth-of-type(2) ul{
+        #cate ul{
            
             padding-left:  20px;
             list-style: none;
         
         }
-        main section:nth-of-type(2) ul li{
+        #cate ul li{
             padding-bottom: 10px;
         }
-        main section:nth-of-type(2) ul li a{
+        #cate ul li a{
         font-family: sans-serif;
             font-size: 20px;
         text-decoration: underline;
             text-decoration-color: #edd4d8;
             
         }
-        main section:nth-of-type(2) ul li a:hover{
+        #cate ul li a:hover{
             text-decoration-color: red;
             cursor: pointer;
         }
@@ -246,21 +257,29 @@
             border: 5px solid white;
             border-radius: 10px;
         }
-        iframe{
-            width: 100%;
-            height: 7000px;
-            border: none;
+        
+        .main-and-footer-container {
+        
+         margin:0 auto;
+            width:1175px;
+            background-color: #edd4d8;
+            overflow:auto;
+            height:-webkit-calc(100%-158px);
         }
+  
 
         </style>
 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
     </head>
     <body>
 
     <header>
         <img src="images/selfie.JPG">
-        <h2 class="shayariaman"><span>Sh</span>a<span>y</span>ari<span>am</span>an.com</h2>  
-        <i class="fa fa-heart"></i>
+        <h2 class="shayariaman"><span>Sh</span>a<span>y</span>ari<span>am</span>an.com</h2>        
         <nav>
             <ul>
                 <li><a href="html/home.html">HOME</a></li>
@@ -271,6 +290,29 @@
                 <li><a href="html/site%20map.html">SITE MAP</a></li>
             </ul>
         </nav>
+         <section id="Cate">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#latestshayari"> Latest shayari</a></li>
+
+                    <li><a href="#romanticshayari">Romantic</a></li>
+
+                    <li><a href="#bestevershayari">Best ever shayari</a></li>
+
+                    <li><a href="#duashayari">Dua shayari</a></li>
+
+                    <li><a href="#sadshayari">Sad shayari</a></li>
+
+                    <li><a href="#dilshayari">Dil shayari</a></li>
+
+                    <li><a href="#hearttouchingshayari">Heart touching</a></li>
+                    
+
+         
+                
+                </ul>
+              
+            </section>
         </header>
                             
         
@@ -279,17 +321,846 @@
         
 
         <main>
-            
+            <div class="main-and-footer-container">
             <section>
               
   
 
+<!-------------------------Latest shayari------------------------------------>
+                <div id="latestshayari">
+               
+               <br>
+                <br>
+                <br>
+                <br><br>
+                <br>
+                 
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/background_cars_1.jpg" alt="background cars (1)" title="background cars (1)" id="wows1_0"/></li>
+		<li><img src="data1/images/background_girl_1.jpg" alt="background girl (1)" title="background girl (1)" id="wows1_1"/></li>
+		<li><img src="data1/images/background_stones_1.jpg" alt="background stones (1)" title="background stones (1)" id="wows1_2"/></li>
+		<li><img src="data1/images/dilteredeedarko.jpg" alt="dilteredeedarko" title="dilteredeedarko" id="wows1_3"/></li>
+		<li><img src="data1/images/kaisiriwaz.jpg" alt="Kaisiriwaz" title="Kaisiriwaz" id="wows1_4"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/kyaaukatinsanki.jpg" alt="slideshow javascript" title="kyaaukatinsanki" id="wows1_5"/></a></li>
+		<li><img src="data1/images/tumharebagair.jpg" alt="Tumharebagair" title="Tumharebagair" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_thumbs">
+<div>
+		<a href="#" title="background cars (1)"><img src="data1/tooltips/background_cars_1.jpg" alt="" /></a>
+		<a href="#" title="background girl (1)"><img src="data1/tooltips/background_girl_1.jpg" alt="" /></a>
+		<a href="#" title="background stones (1)"><img src="data1/tooltips/background_stones_1.jpg" alt="" /></a>
+		<a href="#" title="dilteredeedarko"><img src="data1/tooltips/dilteredeedarko.jpg" alt="" /></a>
+		<a href="#" title="Kaisiriwaz"><img src="data1/tooltips/kaisiriwaz.jpg" alt="" /></a>
+		<a href="#" title="kyaaukatinsanki"><img src="data1/tooltips/kyaaukatinsanki.jpg" alt="" /></a>
+		<a href="#" title="Tumharebagair"><img src="data1/tooltips/tumharebagair.jpg" alt="" /></a>
+	</div>
+</div>
+<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html slider</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
 
+<h2>Latest shayari</h2>
+<!--<img src="images/Monushayari.jpg">-->
+<p>कैसी रिवाज है ख़ुदा, तेरे इस जहान की।<br>
+धँधा करे ताजिर, और बदनामी दुकान की।</p>
+                    <img src="images/Myshayari1.jpg" class="images">
+<p>Kaisi riwaz hai khuda, tere is jahaan ki.<br>
+    dhandha kare tazir or badnaami dukaan ki.</p><br><hr>
+                   
                     
+<p>क्या औक़ात इन्सान की, वक़्त की स़ितम ज़रिफी मे।<br>
+गंगा का पानी पीकर भी, वो मल्लाह जीये ग़रीबी मे।</p>
+                    
+                     <img src="images/Myshayari13.jpg" class="images">
+<p>Kya ookaat insaan ki waqt ki sitam jarifi main.<br>
+    ganga ka paani pikar bhi, wo malah jiye garibi main.</p><br><hr>
+                     <p>तुम्हारे बग़ैर, मेरी हर शाम निराली होती है।<br>
+ख़्यालों की महफ़िल में, सिर्फ़ बेख्याली होती है
+</p>
+                    <img src="images/Myshayari3.jpg" class="images">
+<p>Tumhare bagair meri har sham nirali hoti hai.<br>
+khayalon ki mahifil main sirf, bekhayali hoti hai.</p><br><hr>
+                    <p>दिल तेरे दीदार को, जब-जब मुंतज़ीर होता है।<br>
+झूठा ही सही पर, अहसास बे नज़ीर होता है ।</p>
+                    <img src="images/Myshayari4.jpg" class="images">
+                    
+<p>Dil tere deedar ko jab-jab mintjir hota hai.<br>
+    jhoota hi sahi par ahsaas benazir hota hai.
+    </p><br><hr>
+                    <p>छोड़कर आँधी की चपेट में, छोटे से आशियान को।<br>
+सुकून कैसे मिल जाता है, इस दिल के बाग़वान को।</p>
+                    
+                    <img src="images/Myshayari12.jpg" class="images">
+<p>Chodkar aandhi ki chapet main chote se aasiyan ko,<br>
+    sukoon kaise mil jaata hai, is dil ke bagwaan ko.</p><br><hr>
+
+<p>लोग बेताब थे मिलने को, मंदिर के पुजारी से।<br>
+हम दुआ लेकर आ गये, बाहर बैठे भिखारी से।</p>
+                    
+                    <img src="images/myshayari14logbetab.jpg" class="images">
+<p>Log betab the milne ko, mandir ke poojari se,<br>
+    hum dua lekar aagaye, bahae baithe bikhari se.</p><br><hr> 
+<p>किस बिना पे कोई यक़ीं करे, तवायफ़ों के प्यार पर।<br>
+नेता तो कर दिये बयाँ, अब क्या बोलूँ सरकार पर।</p>
+                    <img src="images/myshayari15kisbinan.jpg" class="images">
+                    
+<p>Kis bina par koi yakin kare, tawayfon ke pyar par.<br>
+    neta to kar diye bayan, ab kya bolun sarkar par.</p><br><hr>
+  <p>मिलती है सियासत गद्दी, कोई ख़ास जनाब नवाबी को ।<br>
+अता नहीं करता वो केसर, हर हिरण की नाभी को।
+</p>
+                    <img src="images/myshayari16miltihai.jpg" class="images">
+<p>Milti hai siyasat gaddi koi khaas janab nawabi ko.<br>
+    aata nahi karta wo kesar har hiran ki nabhi ko.</p><br><hr>
+  
+ 
+
+<p>जब - जब सनम हमसे दूर होता है।<br>
+लफ़्ज़ों मे दर्द और क़लम में नूर होता है ।</p>
+                    <img src="images/myshayari17jabjab.jpg" class="images">
+                    
+<p>Jab-jab sanam humse door hota hai,<br>
+lafjon main dard or kalam main noor hota hai.
+</p><br><hr>
+<p>इतना सा अहसान ए काग़ज़, अपने आका पर कर देना ।<br>
+जब वो मिले हमसे, जुबां को लफ़्ज़ों से भर देना।</p>
+    <img src="images/myshayari18itnasaahsaan.jpg" class="images">
+ <p>Itna sa ahsaan a kagaj apne aaka par kar dena,<br>
+     jab wo mile humse, jubaan ko lafjon se bhar dena.</p><br><hr>
+<p>कातिल नहीं ज़माने में, मेरे यार की तरह।<br>
+खामोशियाँ भी काम में लि, तलवार की तरह ।</p>
+    <img src="images/myshayari19katilnahi.jpg" class="images">
+<p>Katil nahi jamane main mere yaar ki tarah<br>
+    khamosiyan bhi kaam main li, talvaar ki tarah.</p><br><hr>
+ <p>कोई और गवारा नहीं, तुम्हें आया देख कर।<br>
+किसी दिन उलझ पड़ेगें, अपना साया देख कर।</p>
+    <img src="images/myshayari20koiorgavara.jpg" class="images">
+<p>koi or gavara nahi, tumhe aaya dekhkar.<br>
+    kisi din oolajh padenge apna saya dekh kar.</p><br><hr>
+<p>शीशे की ज़िद थी, दर्पण बनना ।<br>
+फिर क्यों बुरा लगे, एक तरफ़ से बदलना।</p>  
+    <img src="images/myshayari21sisekizid.jpg" class="images">
+<p>Sishe ki zid thi darpan ban jana.<br>
+    fir kyon bura lage ek taraf se badlna.</p><br><hr>
+<p>एक काँच के टुकड़ों में, फ़र्क़ कितना बन गया।<br>
+एक हसिना का आइना, दूसरा शराबी की मीना बन गया।</p>
+    <img src="images/myshayari22ekkanchke.jpg" class="images">
+<p>Ek kaanch ke tukdon main fark kitna ban gaya.<br>
+    ek hasina ka aaina, doosra sarabi ki mina ban gaya.</p><br><hr>
+
+<p>गीले- शिकवे सारे, अदम में रख देते।<br>
+राह ए मुहोब्बत का हिसाब, क़दम में रख देते।<br>
+मेरे ख़त का जवाब तो देते जनाब,<br>
+कलेजा निकाल कर, क़लम में रख देते।</p>
+    <img src="images/myshayari23gilesikwe.jpg" class="images">
+<p> Gile sikwe sare adam main rakh dete,<br>
+    rah e muhobbat ka hisab kadam main rakh dete.<br>
+    Mere khat ka jawab to dete janab,<br>
+    kaleja nikaal ke kalam main rakh dete.</p><br><hr>
+     
+<p>देख कर उनकी बेरुख़ी, कुछ तो सुधर जा ।<br>
+ए मेरे मुहोब्बत के जाम, अब तो उतर जा ।</p>
+    <img src="images/myshayari24Raahemuhobbat.jpg" class="images">
+<p>Dekh kar unki berookhi, kuch to sudhar ja.<br>
+    a mere muhobbat ke jaam ab to utar ja.</p><br><hr>
 
 
+
+<p>नहीं बिके हम जीवन भर, क़िमत के ख़रिदों से।
+           <br>पल भर में निलाम हो गए, मुहोब्बत के मुरिदों से।</p>
+    <img src="images/Myshayari8.jpg" class="images">
+<p>Nahi bike hum jiwan bhar, kimat ke kharidon se.<br>
+    pal bhar main nilaam ho gaye, muhobbat ke muridon se.</p><br><hr>
+
+                </div>  
                 
-            <iframe id="iframe" src="html/latestshayari.html"></iframe>  
+                <!------------------------Romantic shayari---------------------------->
+                
+                
+                
+               
+                <div id="romanticshayari">
+ 
+ <br><br><br><br><br><br>
+        
+                 
+<h2>Romantic shayari</h2>
+ <p>नहीं बिके हम जीवन भर, क़िमत के ख़रिदों से।
+           <br>पल भर में निलाम हो गए, मुहोब्बत के मुरिदों से।</p> 
+    <img src="images/Myshayari8.jpg" class="images">
+    
+<p>Nahi bike hum jiwan bhar,kimat ke kharidon se.<br>
+    pal bhar main nilam ho gaye, muhobbat ke muridon se.</p><br><hr>
+    
+       <p>गुलशन ए गुलज़ार का, हर ग़ुलदान तुम्हारा है।<br>
+हर शाख़ ए गुल पर, इक अहसान तुम्हारा है।</p>  
+    <img src="images/Myshayari6.jpg" class="images">
+    
+<p>Gulsan e gulzaar ka har guldaan tumhara hai.<br>
+    Har sakh e gul par ek ehsaan tumhara hai.</p><br><hr>
+    
+    <p>तराशा जिस्म तराश ने, इस क़द्र सरताज़ को।<br>
+भूल जाये एक पल को, साजिन्दा अपने साज को।</p>
+    
+    <img src="images/Myshayari7.jpg" class="images">
+<p>Tarasa jisam taras ne is kadar sartaj ko.<br>
+    bhool jaye ek pal ko,sajinda apne saaz ko.</p><br><hr>
+    
+    <p>छोड़कर आँधी की चपेट में, छोटे से आशियान को।<br>
+सुकून कैसे मिल जाता है, इस दिल के बाग़वान को।</p>
+    <img src="images/Myshayari12.jpg" class="images">
+<p>Chod kar aandhi ki chapet main, chote se aasiyan ko.<br>
+    sukoon kaise mil jata hai, is dil ke bagwaan ko.</p><br><hr>
+    
+     <p>कोई और गवारा नहीं, तुम्हें आया देख कर।<br>
+किसी दिन उलझ पड़ेगें, अपना साया देख कर।</p>
+    <img src="images/myshayari20koiorgavara.jpg" class="images">
+<p>Koi or gawara nahi tumhe aaya dekh kar.<br>
+    kisi din ulagh padenge apna saya dekh kar.</p><br><hr>
+    
+ <p>जो लफ़्ज आपकी जुबां में होते है,<br>
+उनके दर्ज़े, और कहाँ होते है ?</p>
+    <img src="images/myshayari26jolagajaapki.jpg" class="images">
+<p>Jo lafaj aapki jubaan main hote hai,<br>
+    unke darje or kanha hote hai.</p><br><hr>
+        
+
+        <p>माना तेरे सजदे में, बहुतों नें सर झुकाया है।<br>
+पर ये मत भुलना, मैंने तुम्हें अपना ख़ुदा बनाया।</p>
+    <img src="images/myshayari27manateresajde.jpg" class="images">
+<p>Mana tere sazde main bahuton ne sar jhukaya hai.<br>
+    par ye mat bhoolna, ki maine tumhe apna khuda banaya hai.</p><br><hr>
+
+       
+           <p>लफ़्ज बोलते है जुबां की भाषा, मदहोस ख़्यालातों में।<br>
+फिर जुबां क्यों नहीं निभाती फ़र्ज़, हसीं मुलाक़ातों में!
+</p>
+    <img src="images/myshayari28lafajboltehai.jpg" class="images">
+<p>Lafaj bolte hai jubaan ki bhasa, madhoos khayalaton main.<br>
+
+    fir jubaan kyon nahi nibhati farz, hasin mulakatin main.</p><br><hr>
+
+<p>ये लफ़्ज़ भी कुछ- कुछ तुम्हारी तरह है।<br>
+इन्हें याद नहीं रखना पड़ता ।</p> 
+    <img src="images/myshayari29yelafajbhikuch.jpg" class="images">
+<p>Ye lafaj bhi kuch-kuch tumhari tarah hai.<br>
+    inhe yaad nahi rakhna padta.</p><br><hr>
+
+      <p>  नूर है, फ़िज़ा है, ख़ुशरंग सी बहार है।<br>
+ये तुम आ रहे हो या मौसम का ख़ुमार है ।</p>
+                    <img src="images/myshayari30noorhaifizahai.jpg" class="images">
+<p>Noor hai, fiza hai, khoosh rang si bahar hai.<br>
+    ye tum aarahe ho yaa mausam ka khoomar hai.</p><br><hr>
+
+       
+   
+
+   <p>मेरे दिलदार की ख़ामोशीयाँ, हरदम पास रहती है।<br>
+हम मीर नहीं फ़क़ीर है, जिनकी ग़ज़ल उदास रहती है।</p> 
+                    <img src="images/myshayari31meredildaarkikhamosiyan.jpg" class="images">
+<p>Mere dildaar ki khamosiyan, har dam paas rahti hai.<br>
+hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
+       
+       
+       <p>इश्क़ के मौसमों का, कोई ज़माना नहीं होता ।<br>
+ये बारिश उलफ़त की है जनाब, यहाँ पैमाना नहीं होता।</p>
+                    <img src="images/myshayari32ishqkemausamonka.jpg" class="images">
+<p>Ishq ke mausamon ka koi jamana nahi hota.<br>
+    ye baris ulfat ki hai janab,yanha paimana nahi hota.</p><br><hr>
+
+
+       <p>ये दिलों की धड़कन, ये आँखों की फड़कन ।<br>
+कोई मुहोब्बत का कारवाँ है या, मौसमों की अड़चन।</p>
+                    <img src="images/myshayari33yedilonkidhadkan.jpg" class="images">
+<p>Ye dilon ki dhadkan, ye aankhon ki fadkan.<br>
+    koi muhobbat ka karawan hai yaa mausamon ki adchan.</p><br><hr>
+
+<p>तुमने मुहोब्बत सिखी होगी, उलफ़त के अख़बारों से।<br>
+क्या होगा जब मिलोगी तुम, हम ज़ालिम पत्रकारों से।</p>
+                    <img src="images/myshayari34tumneulfatsikhihogi.jpg" class="images">
+<p>Tumne muhobbat sikhi hogi, ulfat ke alhbaron se.<br>
+    kya hoga jab milogi tum, un zalim patarkaron se.</p><br><hr>
+       
+<p>इस पाक़िजा से नाते को, मुहब्बत का नाम ना दे,<br>
+लोग सब़ब ढुंढ़ते है, बदनाम करने का ।
+</p>
+                    <img src="images/myshayari35ispakizasenaate.jpg" class="images">
+<p>Is pakiza se nate ko muhobbat ka naam na de.<br>
+    log sabab dhundhte hai badnaam karne ka.</p><br><hr>
+
+
+                </div>
+           
+                <!------------------Best ever shayari------------------------>
+                
+                <div id="bestevershayari">
+   
+
+ <br><br><br><br><br><br>
+<h2>Best ever shayari</h2>
+<p>आज मेरी क़लम, मुझ पर मेहरबान हुई है ।<br>
+जो बात होंठ नहीं कह पाये, लफ़्ज़ों से बयान हुई है.</p>
+                    <img src="images/myshayari36aajmerikalammujhpar.jpg" class="images">
+   <p>Aaj meri kalam mujh par maharbaan hui hai,<br>
+       jo baat hoth nahi kah paai, lafjon se bayan hui hai.</p><br><hr>
+                    
+       <p>तराशा जिस्म तराश ने, इस क़द्र सरताज़ को।<br>
+भूल जाये एक पल को, साजिन्दा अपने साज को।</p>
+                    <img src="images/Myshayari7.jpg" class="images">
+                    
+<p>Tarasa jisam taraas ne is qudar sartaj ko,<br>
+    bhool jaye ek pal ko, sazinda apne saaj ko.</p><br><hr>
+   
+<p>स़राफत की कसमकस मे, भिड़ गये आगों से।<br>
+महफ़िल की श़मां तेज़ निकली, मंदिर के चिराग़ों से।</p>
+                    <img src="images/myshayari37sarafatkikasaamkas.jpg" class="images">
+<p>Sarafat ki kasamkas main, bhid gaye aagon se.<br>
+    mahfil ki sama tej nikli, mandir ke chiragon se.</p><br><hr>
+    
+<p>किस बिना पे कोई यक़ीं करे, तवायफ़ों के प्यार पर।
+नेता तो कर दिये बयाँ, अब क्या बोलूँ सरकार पर।</p>
+                
+                    <img src="images/myshayari38kisbinapekoiyakin.jpg" class="images">
+<p>Kis bina par koi yakin kare, tawayfon ke pyar par.<br>
+    neta to kar diye bayan, ab kya bolun sarkar par.</p><br><hr>
+   
+<p>जब से आया है पेपर वेट,काग़ज़ी बाज़ारों में।<br>
+लफ़्ज़ों का प्रयोग कम सा हुआ, वज़नदार औज़ारों में।</p>
+                    <img src="images/myshayari39jabseaayahaipaper.jpg" class="images">
+<p>Jab se aaya hai paper weight, kagji bazaron main.<br>
+    lafjon ka pryog kam sa hua, wajandaar aujaron main.</p><br><hr>
+    <p>लफ़्ज बोलते है जुबां की भाषा, मदहोस ख़्यालातों में।<br>
+फिर जुबां क्यों नहीं निभाती फ़र्ज़, हसीं मुलाक़ातों में!
+</p>
+                    <img src="images/myshayari28lafajboltehai.jpg" class="images">
+<p>Lafj bolte hai juban ki bhasa, madhos khayalaton main.<br>
+    fir jubaan kyon nahi nibhati farz, hasin mulakaaton main.</p><br><hr>
+        
+          <p>मिलती है सियासत गद्दी, कोई ख़ास जनाब नवाबी को ।<br>
+अता नहीं करता वो केसर, हर हिरण की नाभी को।
+</p>
+                    <img src="images/myshayari16miltihai.jpg" class="images">
+<p>Milti hai siyasat gaddi koi khaas janab nawabi ko.<br>
+    aata nahi karta wo kesar har hiran ki nabhi ko.</p><br><hr>
+   
+    <p>उनके प्यार की  तारीफ़,इस क़दर हुई।<br>
+हमें छोड़ कर, पूरे शहर को ख़बर हुई ।</p>
+             <img src="images/myshayari40unkepyarkitarif.jpg" class="images">      
+<p>Unke pyar ki tarif is qudar hui.<br>
+    hume chodkar poore sahar ko khabar hui.</p><br><hr>
+   
+<p>ये लफ़्ज़ों की भाषा भी अजीब होती है ।<br>
+उलझा देती है समझाकर।</p>
+                    <img src="images/Myshayari41yeAlfazonKiBhasaaBhi.jpg" class="images">
+<p>Ye lafjon ki bhasa bhi azeeb hoti hai.<br>
+    uljha deti hai samjhakar.</p><br><hr>
+
+<p>देख कर उनकी बेरुख़ी, कुछ तो सुधर जा ।<br>
+ए मेरे मुहोब्बत के जाम, अब तो उतर जा ।</p>
+                    <img src="images/myshayari42dekhkarunkiberukhi.jpg" class="images">
+<p>Dekh kar unki berukhi, kuch to sudhar ja.<br>
+    a mere muhobbat ke jaam, ab to utar ja.</p><br><hr>
+        
+        <p>कैसी रिवाज है ख़ुदा, तेरे इस जहान की।<br>
+धँधा करे ताजिर, और बदनामी दुकान की।</p> 
+                    <img src="images/myshayari.jpg" class="images">
+<p>Kaisi riwaz hai khuda, tere is zahan ki.<br>
+    dhandha kare tazir, or badnaami dukaan ki.</p><br><hr>
+       
+       <p>लोग बेताब थे मिलने को, मंदिर के पुजारी से।<br>
+हम दुआ लेकर आ गये, बाहर बैठे भिखारी से।</p>
+                    <img src="images/myshayari14logbetab.jpg" class="images">
+<p>Log betab the milne ko, mandir ke poojari se,<br>
+    hum dua lekar aagaye, bahae baithe bikhari se.</p><br><hr>   
+
+       <p>बहुत सताया बहुत रुलाया, मुहोब्बत के वक़ीलो ने।<br>
+केस हराकर दिल जीत लिया; मेरे यार की दलीलों नें।</p>
+       <img src="images/myshayari43bahutsatayabahutrulaa.jpg" class="images">s
+      <p>Bahut sataya bahut rulaya, muhobbat ke vakilon se.<br>
+          case harakar dil jeet liya, mere yaar ki dalilon ne.</p><br><hr>
+                    
+        <p>वो काग़ज़ कभी फड़फड़ाते नहीं,<br>
+            जिनके लफ़्ज़ों में वज़न होता है।</p>
+               <img src="images/myshayari44wokagajKabhiFadfadateNhi.jpg" class="images">     
+<p>Wo kagaz kabhi fadfadate nahi, <br>
+    jinke lafjon main wajan hota.</p><br><hr>
+
+ 
+                </div>
+                
+                <div id="duashayari">
+  
+ <br><br><br><br><br><br>
+<h2>Dua shayari</h2>
+                    <p>मेरी दुआ का फ़ख़्त इतना असर हो ।<br>
+तेरी दुआ सुनने को, ख़ुदा हर व़क्त्त मय्यसर हो।</p>
+                    <img src="images/myshayari48meriDuaKaFaqt.jpg" class="images">
+<p>Meri dua ka faqt itna asar ho,<br>
+    teri dua sunne ko khuda har waqt maysar ho.</p><br><hr>
+                    
+     <p>इस नाचीज़ पर, इतना सा फ़ज़ल हो जाये।<br>
+मैं उसकी तारीफ़ करूँ, और ग़ज़ल हो जाये।</p> 
+                    <img src="images/myshayari45isNaacheezPar.jpg" class="images">
+<p>Is nacheez par itna sa fazal ho jaye.<br>
+    main uski tarif karun or gazal ho jaye.</p><br><hr>
+         <img src="images/myshayari27manateresajde.jpg" class="images">
+<p>माना तेरे सजदे में, बहुतों नें सर झुकाया है।<br>
+पर ये मत भुलना, मैंने तुम्हें अपना ख़ुदा बनाया।</p>
+<p>Mana tere sazde main bahuton ne sar jhukaya hai.<br>
+    par ye mat bhoolna, maine tumhe apna khuda banaya hai.</p><br><hr>
+ 
+            <p> मुक्त़सर सी मुलाक़ात, मुकम्मल हो जाये ।<br>
+वो छोड़कर जाये, उससे पहले अजल हो जाये।</p>
+<img src="images/myshayari46muktsarSiMulakatMukamal.jpg" class="images">
+<p>Muktsar si mulaakat mukamal ho jaye.<br>
+    wo chod kar jaye us se pahle azal ho jaye.</p><br><hr>
+ 
+
+  <p>ख़ुदा करे मैं इस क़ाबिल हो जाऊँ ।<br>
+दुआ तूँ करे और मैं शामिल हो जाऊँ ।</p>
+                    <img src="images/myshayari47KhudaKareMainIsKabil.jpg" class="images">
+<p>Khuda kare main is kabil ho jaoon,<br>
+    dua tun kare or main samil ho jaoon.</p><br><hr>
+        
+        <p>राह ए मुहोब्बत दुसवार नहीं होती।<br>
+बस हमराहों की मंज़िलें एक होनी चाहिए</p>
+                    <img src="images/myshayari49raahEMuhobbatDuswaar.jpg" class="images">
+<p>Raah e muhobbat duswaar nahi hoti,<br>
+    bus humrahon ki manzilen ek honi chahiye.</p><br><hr>
+ <p>राह ए मुहोब्बत, कुछ यूँ बसर हो जाये।<br>
+जो जिसे चाहे, वही हमसफ़र हो जाये।
+</p>
+                    <img src="images/Myshayari5.jpg" class="images">
+<p>Rah e muhobbat kuch yun basar ho jaye,<br>
+    jo jise chahe wahi humsafar ho jaye.</p><br><hr>
+ <p>आलम ए बेचारगी में, निगाह ए कर्म चाहिए।<br>
+जो लिखे फ़ख़्त ख़ुशी हमारी, ऐसी क़लम चाहिए।</p>
+                    <img src="images/myshayari50aalamEBechargHai.jpg" class="images">
+<p>Aalam e bechargi main, nigah e karam chahiye,<br>
+    jo likhe faqt khusi humari, aisi kalam chahiye.</p><br><hr>
+    
+ <p>आलम ए बेताज़गी है, दीदार का चारा चाहिए ।<br>
+इस बिख़रे अहल-ए-चमन को, गुलज़ार दुबारा चाहिए।</p>
+                    <img src="images/myshayari51aalameBechargi.jpg" class="images">
+<p>Aalam e bechargi hai, deedar ka chara chahiye.<br>
+    is bikhre ahale chaman ko gulzaar doobara chahiye.</p><br><hr>
+
+ </div>
+          
+                <!------------------------------sad shayari----------------------------->
+                <div id="sadshayari">
+                
+
+ <br><br><br><br><br><br>
+<h2>Sad shayari</h2>
+<p>मेरे गाँव का मौसम, बड़ा अजीब  है।<br>
+जेठ है मेहरबाँ, और सावन ग़रीब है ।</p>
+                    <img src="images/myshayari52mereGavnKaMausm.jpg" class="images">
+<p>Mere gavn ka mausam bada ajeeb hai.<br>
+    jeth hai mahrban or sawan gareeb hai.</p> <br><hr>
+
+        <p>तक़दीर की लकीर में पाया था, मुहोब्बत का मँजर।<br>
+कमबख़्त ने लकीर ही बदल डाली, इस क़दर चलाया खँज़र।</p> 
+                    <img src="images/myshayari53TaqdeerKiLakirMain.jpg" class="images">
+<p>Taqdeer ki lakeer main paya tha muhobbat ka manzar.<br>
+    kambakhat ne kakeer hi badal daali, is qudar chalaya khanjar.</p><br><hr>
+    
+<p>तेरे शहर को हुआ क्या, घिर गया हुँ ख़तरों से।<br>
+यहाँ तो दिल परखे जाते है, हुस्न की नज़रों से।</p>
+                    <img src="images/myshayari54TereSaharKoHuaKya.jpg" class="images">
+<p>Tere sahar ko hua kya, ghir gaya hun khatron se.<br>
+    yanha to dil parkhe jate hai, husan ki nazron se.</p><br><hr>
+
+   <p>कुछ जनाज़े दिल से निकले, कुछ निकले घरों से,<br>
+घरों वाले दुनिया से बाहर, और दिल वाले ख़तरों से।
+                    </p>
+                    <img src="images/myshayari55KuchZanajeDilSeNikle.jpg" class="images">
+<p>Kuch janaze dil se nikle, kuch nikle gharon se.<br>
+    ghar wale duniya se bahar, dil wale kharon se.</p><br><hr>
+
+ <p>ये शायरी ही निभायेगी मेरा साथ ज़िंदगी भर,<br>
+वक़्त के साथ ल़फ्ज, मतलब जो नहीं बदलते।</p>
+       <img src="images/myshayari56YeShayariHiNibhayegiMeraSath.jpg" class="images">             
+<p>Ye shayari hi nibhayegi mera sath jindgi bhar,<br>
+    waqt ke sath lafaj, matlab jo nahi badlte.</p><br><hr>
+
+<p>गीले- शिकवे सारे, अदम में रख देते।<br>
+राह ए मुहोब्बत का हिसाब, क़दम में रख देते।<br>
+मेरे ख़त का जवाब तो देते जनाब,<br>
+कलेजा निकाल कर, क़लम में रख देते।</p>
+                    <img src="images/myshayari23gilesikwe" class="images">
+<p>Gile sikwe saare, adam main rakh dete.<br>
+    rah e muhobbat ka hisab, kadam main rakh dete,<br>
+    mere khat ka jawab to dete janab.<br>
+    kaleja nikal ke kadam main rakh dete.</p><br><hr>
+
+
+   
+  
+ <p>अँजाम ए मुहोब्बत, किस क़दर कहूँ,<br>
+अल्फ़ाज़ दर्द माँगते है, और क़लम लहू ।</p>
+                    <img src="images/myshayari57anjamEMuhobatKisKadarKahun.jpg" class="images">
+<p>Anjam e muhobbat kis kadar kahun.<br>
+    alfaaj dard mangte hai, or kalam lahu.</p><br><hr>
+
+  <p>हम तो रूसवा हो गए, दिल अपना तुड़वाकर।<br>
+और वो पा गए पाकिज़गी, बस एक निकाह पढ़वाकर।</p>
+                    <img src="images/myshayari58humToRuswaHoGaye.jpg" class="images"> 
+<p>Hum to ruswa ho gaye, dil apna tudwakar,<br> 
+    or wo paa gaye paakizgi, bus ek nikaah padhwaakar.</p><br><hr>
+ <p>तारों को दर्द होता है धुन देकर,<br>
+और लोग कहते है, साजिन्दा साज बजाता है ।</p>
+                    <img src="images/myshayari59TaronKoDardHota.jpg" class="images">
+    <p>Taron ko dar hota hai dhun dekar<br>
+    or log kahte hai ki sajinda saaj bajata hai.</p>
+                    
+  <p>खँजरों से मिटवाई थी, हाथों की लकीर को।<br>
+कैसे दोषी ठहराऊँ अब, मुंसिफ़ ए तक़दीर को।</p>
+           <img src="images/myshayari60Khanjaronsemitwaithi.jpg" class="images">         
+<p>Khanjron se mitwai thi, haton ki laqeer ko.<br>
+    kaise dosi thahraaoon ab, munsif e taqdeer ko.</p><br><hr>
+
+<p>तुम्हें तुम्हारे पिया, हमें दास्ताँ ए ग़म मुबारक।<br>
+कात़िल हमारी दुनिया के, तुम्हे दूसरा जन्म मुबारक ।</p>
+                    <img src="images/myshayari61TumheTumharePiyaHume.jpg" class="images">
+<p>Tumhe tumhare piya, hume dastan e gum mubaarak.<br>
+    katil humari duniya ke, tumhe dusra janam mubarak.</p><br><hr>
+
+<p>कौन किसी पर रहम खाता है जनाब।<br>
+लोग तो बुझते चिराग़ों की भी क़सम खा लेते है।</p>
+<p>Kon kisi par raham khata hai janab.<br>
+    log to bujhte chiragon ki bhi kasam kha lete hai.</p><br><hr>
+        <p>शायरी का मतलब किसी को समझ आये न आये,<br>
+पर मतलब की शायरी सबको समझ आती है ।</p>
+<p>Shayari ka matlab kisi ko samajh aaye na aaye.<br>
+    par matlab ki shayari sabko samajh aati hai.</p>
+<br><hr>
+
+ <p>अल्फाज़ों के पेट को, जवानियाँ खिलानी पड़ती है।<br>
+क़लम रूपी तलवार से,  जिन्दगानियाँ मिटानी पड़ती है ।</p>
+<p>Alfajon ke pet ko jawaniyan khilani padti hai.<br>
+    kalam roopi talvar se jindganiyan mitani padti hai.
+</p>
+<br><hr>
+ <p>सिर्फ़ क़लम रखने से कुछ नहीं होता जनाब,<br>
+चलन भी बिगाड़ना पड़ता है, लफ़्जों की ज़ुस्तजु में !</p>
+<p>Sirf kalam rakhne se kuch nahi hota janab.<br>
+    chalan bhi bigadna padta hai.</p>
+<br><hr>
+
+
+
+
+ 
+        
+ <p>आलम ए बेचारगी में, निगाह ए कर्म चाहिए।<br>
+जो लिखे फ़ख़्त ख़ुशी हमारी, ऐसी क़लम चाहिए।</p>
+<p>Aalam e betajgi main, nigah e karam chahiye.<br>
+    jo likhe faqt khusi humari, aisi kalam chahiye</p>
+<br><hr>
+    <p>हर शाख़ ए गुल पर, फुलों का आशियाँ नहीं होता।<br>
+होगी बेरुख़ी मौसम की, बेज़ार बाग़वाँ नहीं होता है।
+</p>
+<p>Har saakh e gul par, fuloon ka aasiyan nahi hota.<br>
+    hogi berukhi mausam ki, bezar bagwaan nahi hota.</p>
+<br><hr>
+       <p>शीशे की ज़िद थी, दर्पण बनना ।<br>
+फिर क्यों बुरा लगे, एक तरफ़ से बदलना।</p>
+<p>Shishe ki zid thi darpan ban na.<br>
+    fir kyon bura lage ek taraf se badlna.</p>
+<br><hr>
+<p>कातिल नहीं ज़माने में, मेरे यार की तरह।<br>
+खामोशियाँ भी काम में लि, तलवार की तरह ।</p>
+<p>Katil nahi jamane main mere yaar ki tarah.<br>
+    khamosiyan bhi kaam main li talvar ki tarah.</p>
+<br><hr>
+<p>इस पाक़िजा से नाते को, मुहब्बत का नाम ना दे,<br>
+लोग सब़ब ढुंढ़ते है, बदनाम करने का ।
+</p>
+<p>Is pakiza se naate ko muhobbat ka naam na de.<br>
+    log sabab dhundhte hai badnaam karne ka.</p>
+<br><hr>
+ <p>यूँ ही बदनाम हुआ श़ाकी, बैठकर महख़ाने में,<br>
+क़ुसूरवार तो मीना थी,लबों तक पहुँचाने में।</p>
+<p>Yun hi badnaam hua saki, baith kar mahkhaane main.<br>
+    kusurwaar to wo mina thi, labon tak pahunchane main.</p>
+<br><hr>
+<p>छोड़कर आँधी की चपेट में, छोटे से आशियान को।<br>
+सुकून कैसे मिल जाता है, इस दिल के बाग़वान को।</p>
+<p>Chodkar aandhi ki chapet main chote se aasiyan ko.<br>
+    sukoon kaise mil jata hai is dil ke bagwaan ko.</p>
+
+
+<br><hr>
+       <p>ख़्वाहिशों के सागर में, ख़ुशियों की बारिश हो गयी।<br>
+पर साहिल की बस्तियों में, रोशनी धो गयी ।</p>
+<p>Khawahison ke sagar main, khusiyon ki baris ho gai.<br>
+    par sahil ki bastiyon main, roshni dho gai.</p>
+<br><hr>
+
+                </div>
+  <!--------------------------------Dil shayari---------------------------------------->   
+                
+                
+                <div id="dilshayari">
+   
+
+
+
+ <br><br><br><br><br><br>
+<h2>Dil shayari</h2>
+ <p>नहीं बिके हम जीवन भर, क़िमत के ख़रिदों से।
+           <br>पल भर में निलाम हो गए, मुहोब्बत के मुरिदों से।</p> 
+    <img src="images/Myshayari8.jpg" class="images">
+    
+<p>Nahi bike hum jiwan bhar,kimat ke kharidon se.<br>
+    pal bhar main nilam ho gaye, muhobbat ke muridon se.</p><br><hr>
+    
+       <p>गुलशन ए गुलज़ार का, हर ग़ुलदान तुम्हारा है।<br>
+हर शाख़ ए गुल पर, इक अहसान तुम्हारा है।</p>  
+    <img src="images/Myshayari6.jpg" class="images">
+    
+<p>Gulsan e gulzaar ka har guldaan tumhara hai.<br>
+    Har sakh e gul par ek ehsaan tumhara hai.</p><br><hr>
+    
+    <p>तराशा जिस्म तराश ने, इस क़द्र सरताज़ को।<br>
+भूल जाये एक पल को, साजिन्दा अपने साज को।</p>
+    
+    <img src="images/Myshayari7.jpg" class="images">
+<p>Tarasa jisam taras ne is kadar sartaj ko.<br>
+    bhool jaye ek pal ko,sajinda apne saaz ko.</p><br><hr>
+    
+    <p>छोड़कर आँधी की चपेट में, छोटे से आशियान को।<br>
+सुकून कैसे मिल जाता है, इस दिल के बाग़वान को।</p>
+    <img src="images/Myshayari12.jpg" class="images">
+<p>Chod kar aandhi ki chapet main, chote se aasiyan ko.<br>
+    sukoon kaise mil jata hai, is dil ke bagwaan ko.</p><br><hr>
+    
+     <p>कोई और गवारा नहीं, तुम्हें आया देख कर।<br>
+किसी दिन उलझ पड़ेगें, अपना साया देख कर।</p>
+    <img src="images/myshayari20koiorgavara.jpg" class="images">
+<p>Koi or gawara nahi tumhe aaya dekh kar.<br>
+    kisi din ulagh padenge apna saya dekh kar.</p><br><hr>
+    
+ <p>जो लफ़्ज आपकी जुबां में होते है,<br>
+उनके दर्ज़े, और कहाँ होते है ?</p>
+    <img src="images/myshayari26jolagajaapki.jpg" class="images">
+<p>Jo lafaj aapki jubaan main hote hai,<br>
+    unke darje or kanha hote hai.</p><br><hr>
+        
+
+        <p>माना तेरे सजदे में, बहुतों नें सर झुकाया है।<br>
+पर ये मत भुलना, मैंने तुम्हें अपना ख़ुदा बनाया।</p>
+    <img src="images/myshayari27manateresajde.jpg" class="images">
+<p>Mana tere sazde main bahuton ne sar jhukaya hai.<br>
+    par ye mat bhoolna, ki maine tumhe apna khuda banaya hai.</p><br><hr>
+
+       
+           <p>लफ़्ज बोलते है जुबां की भाषा, मदहोस ख़्यालातों में।<br>
+फिर जुबां क्यों नहीं निभाती फ़र्ज़, हसीं मुलाक़ातों में!
+</p>
+    <img src="images/myshayari28lafajboltehai.jpg" class="images">
+<p>Lafaj bolte hai jubaan ki bhasa, madhoos khayalaton main.<br>
+
+    fir jubaan kyon nahi nibhati farz, hasin mulakatin main.</p><br><hr>
+
+<p>ये लफ़्ज़ भी कुछ- कुछ तुम्हारी तरह है।<br>
+इन्हें याद नहीं रखना पड़ता ।</p> 
+    <img src="images/myshayari29yelafajbhikuch.jpg" class="images">
+<p>Ye lafaj bhi kuch-kuch tumhari tarah hai.<br>
+    inhe yaad nahi rakhna padta.</p><br><hr>
+
+      <p>  नूर है, फ़िज़ा है, ख़ुशरंग सी बहार है।<br>
+ये तुम आ रहे हो या मौसम का ख़ुमार है ।</p>
+                    <img src="images/myshayari30noorhaifizahai.jpg" class="images">
+<p>Noor hai, fiza hai, khoosh rang si bahar hai.<br>
+    ye tum aarahe ho yaa mausam ka khoomar hai.</p><br><hr>
+
+       
+   
+
+   <p>मेरे दिलदार की ख़ामोशीयाँ, हरदम पास रहती है।<br>
+हम मीर नहीं फ़क़ीर है, जिनकी ग़ज़ल उदास रहती है।</p> 
+                    <img src="images/myshayari31meredildaarkikhamosiyan.jpg" class="images">
+<p>Mere dildaar ki khamosiyan, har dam paas rahti hai.<br>
+hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
+       
+       
+       <p>इश्क़ के मौसमों का, कोई ज़माना नहीं होता ।<br>
+ये बारिश उलफ़त की है जनाब, यहाँ पैमाना नहीं होता।</p>
+                    <img src="images/myshayari32ishqkemausamonka.jpg" class="images">
+<p>Ishq ke mausamon ka koi jamana nahi hota.<br>
+    ye baris ulfat ki hai janab,yanha paimana nahi hota.</p><br><hr>
+
+
+       <p>ये दिलों की धड़कन, ये आँखों की फड़कन ।<br>
+कोई मुहोब्बत का कारवाँ है या, मौसमों की अड़चन।</p>
+                    <img src="images/myshayari33yedilonkidhadkan.jpg" class="images">
+<p>Ye dilon ki dhadkan, ye aankhon ki fadkan.<br>
+    koi muhobbat ka karawan hai yaa mausamon ki adchan.</p><br><hr>
+
+<p>तुमने मुहोब्बत सिखी होगी, उलफ़त के अख़बारों से।<br>
+क्या होगा जब मिलोगी तुम, हम ज़ालिम पत्रकारों से।</p>
+                    <img src="images/myshayari34tumneulfatsikhihogi.jpg" class="images">
+<p>Tumne muhobbat sikhi hogi, ulfat ke alhbaron se.<br>
+    kya hoga jab milogi tum, un zalim patarkaron se.</p><br><hr>
+       
+<p>इस पाक़िजा से नाते को, मुहब्बत का नाम ना दे,<br>
+लोग सब़ब ढुंढ़ते है, बदनाम करने का ।
+</p>
+                    <img src="images/myshayari35ispakizasenaate.jpg" class="images">
+<p>Is pakiza se nate ko muhobbat ka naam na de.<br>
+    log sabab dhundhte hai badnaam karne ka.</p><br><hr>
+
+
+                </div>
+                
+               <!-- -----------------------------Heart touching Shayari------------------------------->
+                
+                <div id="hearttouchingshayari">
+                
+
+ <br><br><br><br><br><br>
+<h2>Heart touching shayari</h2>
+<p>मेरे गाँव का मौसम, बड़ा अजीब  है।<br>
+जेठ है मेहरबाँ, और सावन ग़रीब है ।</p>
+<p>Mere gavn ka mausam bada ajeeb hai.<br>
+    jeth hai mahrban or sawan gareeb hai.</p> <br><hr>
+
+        <p>तक़दीर की लकीर में पाया था, मुहोब्बत का मँजर।<br>
+कमबख़्त ने लकीर ही बदल डाली, इस क़दर चलाया खँज़र।</p> 
+<p>Taqdeer ki lakeer main paya tha muhobbat ka manzar.<br>
+    kambakhat ne kakeer hi badal daali, is qudar chalaya khanjar.</p><br><hr>
+    
+<p>तेरे शहर को हुआ क्या, घिर गया हुँ ख़तरों से।<br>
+यहाँ तो दिल परखे जाते है, हुस्न की नज़रों से।</p>
+<p>Tere sahar ko hua kya, ghir gaya hun khatron se.<br>
+    yanha to dil parkhe jate hai, husan ki nazron se.</p><br><hr>
+
+   <p>कुछ जनाज़े दिल से निकले, कुछ निकले घरों से,<br>
+घरों वाले दुनिया से बाहर, और दिल वाले ख़तरों से।
+</p>
+<p>Kuch janaze dil se nikle, kuch nikle gharon se.<br>
+    ghar wale duniya se bahar, dil wale kharon se.</p><br><hr>
+
+ <p>ये शायरी ही निभायेगी मेरा साथ ज़िंदगी भर,<br>
+वक़्त के साथ ल़फ्ज, मतलब जो नहीं बदलते।</p>
+<p>Ye shayari hi nibhayegi mera sath jindgi bhar,<br>
+    waqt ke sath lafaj, matlab jo nahi badlte.</p><br><hr>
+
+<p>गीले- शिकवे सारे, अदम में रख देते।<br>
+राह ए मुहोब्बत का हिसाब, क़दम में रख देते।<br>
+मेरे ख़त का जवाब तो देते जनाब,<br>
+कलेजा निकाल कर, क़लम में रख देते।</p>
+<p>Gile sikwe saare, adam main rakh dete.<br>
+    rah e muhobbat ka hisab, kadam main rakh dete,<br>
+    mere khat ka jawab to dete janab.<br>
+    kaleja nikal ke kadam main rakh dete.</p><br><hr>
+
+
+   
+  
+ <p>अँजाम ए मुहोब्बत, किस क़दर कहूँ,<br>
+अल्फ़ाज़ दर्द माँगते है, और क़लम लहू ।</p>
+<p>Anjam e muhobbat kis kadar kahun.<br>
+    alfaaj dard mangte hai, or kalam lahu.</p><br><hr>
+
+  <p>हम तो रूसवा हो गए, दिल अपना तुड़वाकर।<br>
+और वो पा गए पाकिज़गी, बस एक निकाह पढ़वाकर।</p>
+<p>Hum to ruswa ho gaye, dil apna tudwakar,<br> 
+    or wo paa gaye paakizgi, bus ek nikaah padhwaakar.</p><br><hr>
+ <p>तारों को दर्द होता है धुन देकर,<br>
+और लोग कहते है, साजिन्दा साज बजाता है ।</p>
+    
+  <p>खँजरों से मिटवाई थी, हाथों की लकीर को।<br>
+कैसे दोषी ठहराऊँ अब, मुंसिफ़ ए तक़दीर को।</p>
+<p>Khanjron se mitwai thi, haton ki laqeer ko.<br>
+    kaise dosi thahraaoon ab, munsif e taqdeer ko.</p><br><hr>
+
+<p>तुम्हें तुम्हारे पिया, हमें दास्ताँ ए ग़म मुबारक।<br>
+कात़िल हमारी दुनिया के, तुम्हे दूसरा जन्म मुबारक ।</p>
+<p>Tumhe tumhare piya, hume dastan e gum mubaarak.<br>
+    katil humari duniya ke, tumhe dusra janam mubarak.</p><br><hr>
+
+<p>कौन किसी पर रहम खाता है जनाब।<br>
+लोग तो बुझते चिराग़ों की भी क़सम खा लेते है।</p>
+<p>Kon kisi par raham khata hai janab.<br>
+    log to bujhte chiragon ki bhi kasam kha lete hai.</p><br><hr>
+        <p>शायरी का मतलब किसी को समझ आये न आये,<br>
+पर मतलब की शायरी सबको समझ आती है ।</p>
+<p>Shayari ka matlab kisi ko samajh aaye na aaye.<br>
+    par matlab ki shayari sabko samajh aati hai.</p>
+<br><hr>
+
+ <p>अल्फाज़ों के पेट को, जवानियाँ खिलानी पड़ती है।<br>
+क़लम रूपी तलवार से,  जिन्दगानियाँ मिटानी पड़ती है ।</p>
+<p>Alfajon ke pet ko jawaniyan khilani padti hai.<br>
+    kalam roopi talvar se jindganiyan mitani padti hai.
+</p>
+<br><hr>
+ <p>सिर्फ़ क़लम रखने से कुछ नहीं होता जनाब,<br>
+चलन भी बिगाड़ना पड़ता है, लफ़्जों की ज़ुस्तजु में !</p>
+<p>Sirf kalam rakhne se kuch nahi hota janab.<br>
+    chalan bhi bigadna padta hai.</p>
+<br><hr>
+
+
+
+
+ 
+        
+ <p>आलम ए बेचारगी में, निगाह ए कर्म चाहिए।<br>
+जो लिखे फ़ख़्त ख़ुशी हमारी, ऐसी क़लम चाहिए।</p>
+<p>Aalam e betajgi main, nigah e karam chahiye.<br>
+    jo likhe faqt khusi humari, aisi kalam chahiye</p>
+<br><hr>
+    <p>हर शाख़ ए गुल पर, फुलों का आशियाँ नहीं होता।<br>
+होगी बेरुख़ी मौसम की, बेज़ार बाग़वाँ नहीं होता है।
+</p>
+<p>Har saakh e gul par, fuloon ka aasiyan nahi hota.<br>
+    hogi berukhi mausam ki, bezar bagwaan nahi hota.</p>
+<br><hr>
+       <p>शीशे की ज़िद थी, दर्पण बनना ।<br>
+फिर क्यों बुरा लगे, एक तरफ़ से बदलना।</p>
+<p>Shishe ki zid thi darpan ban na.<br>
+    fir kyon bura lage ek taraf se badlna.</p>
+<br><hr>
+<p>कातिल नहीं ज़माने में, मेरे यार की तरह।<br>
+खामोशियाँ भी काम में लि, तलवार की तरह ।</p>
+<p>Katil nahi jamane main mere yaar ki tarah.<br>
+    khamosiyan bhi kaam main li talvar ki tarah.</p>
+<br><hr>
+<p>इस पाक़िजा से नाते को, मुहब्बत का नाम ना दे,<br>
+लोग सब़ब ढुंढ़ते है, बदनाम करने का ।
+</p>
+<p>Is pakiza se naate ko muhobbat ka naam na de.<br>
+    log sabab dhundhte hai badnaam karne ka.</p>
+<br><hr>
+ <p>यूँ ही बदनाम हुआ श़ाकी, बैठकर महख़ाने में,<br>
+क़ुसूरवार तो मीना थी,लबों तक पहुँचाने में।</p>
+<p>Yun hi badnaam hua saki, baith kar mahkhaane main.<br>
+    kusurwaar to wo mina thi, labon tak pahunchane main.</p>
+<br><hr>
+<p>छोड़कर आँधी की चपेट में, छोटे से आशियान को।<br>
+सुकून कैसे मिल जाता है, इस दिल के बाग़वान को।</p>
+<p>Chodkar aandhi ki chapet main chote se aasiyan ko.<br>
+    sukoon kaise mil jata hai is dil ke bagwaan ko.</p>
+
+
+<br><hr>
+       <p>ख़्वाहिशों के सागर में, ख़ुशियों की बारिश हो गयी।<br>
+पर साहिल की बस्तियों में, रोशनी धो गयी ।</p>
+<p>Khawahison ke sagar main, khusiyon ki baris ho gai.<br>
+    par sahil ki bastiyon main, roshni dho gai.</p>
+<br><hr>
+
+                </div>
+                
                 
                <div id="comments"> <h3>Leave a Reply</h3>
                    <textarea type="text-area" placeholder="Comment:"></textarea>
@@ -304,54 +1175,17 @@
             </section>
             
             
-            <section>
-                <h3>Categories</h3>
-                <ul>
-                    <div id="links">
-                    <li><a href="html/latestshayari.html"> Latest shayari</a></li>
-
-                    <li><a href="html/romanticshayari.html">Romantic</a></li>
-
-                    <li><a href="html/bestevershayari.html">Best ever shayari</a></li>
-
-                    <li><a href="html/duashayari.html">Dua shayari</a></li>
-
-                    <li><a href="html/sadshayari.html">Sad shayari</a></li>
-
-                    <li><a href="html/dilshayari.html">Dil shayari</a></li>
-
-                    <li><a href="html/hearttouchingshayari.html">Heart touching</a></li>
-                    
-                    </div>
-         
+            
                 
-                </ul>
-             
-            </section>
-            
-          
-        
-            
-            
-        </main>
-    <footer>
+                <footer>
         <p>Copyright @ 2017 - <span>Shayariaman.com</span></p>
         </footer>
-  <script>
-            var links = document.querySelector('#links');
-            var iFrame= document.querySelector('iframe');
-            links.addEventListener('click',function(e){
-              e.preventDefault();
-               var href= e.target.href;
-               if(href)
-               iFrame.src = href;    
-            })
- 
-           function resizeIframe(height) {
-            document.getElementById('iframe').height = height;
-           }
+            
+         
+        </div>
+        </main>
+    
 
-        </script>
         
         
         
