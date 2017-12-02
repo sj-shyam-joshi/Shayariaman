@@ -32,7 +32,7 @@
         }
         header{
             
-            position: sticky;
+           /* position: sticky;*/
              top: 0;
             z-index: 999;
             background-color: white;
@@ -197,8 +197,7 @@
         }
        
         #cate{
-            position: absolute;
-            right: 20px;
+            
             display: inline-block;
             
             
@@ -262,6 +261,25 @@
            
         }
         
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+        
   </style>
 
 <!-- Start WOWSlider.com HEAD section -->
@@ -284,29 +302,7 @@
                 <li><a href="html/site%20map.html">SITE MAP</a></li>
             </ul>
         </nav>
-         <section id="cate">
-                <h3>Categories</h3>
-                <ul>
-                    <li><a href="#latestshayari"> Latest shayari</a></li>
-
-                    <li><a href="#romanticshayari">Romantic</a></li>
-
-                    <li><a href="#bestevershayari">Best ever shayari</a></li>
-
-                    <li><a href="#duashayari">Dua shayari</a></li>
-
-                    <li><a href="#sadshayari">Sad shayari</a></li>
-
-                    <li><a href="#dilshayari">Dil shayari</a></li>
-
-                    <li><a href="#hearttouchingshayari">Heart touching</a></li>
-                    
-
          
-                
-                </ul>
-              
-            </section>
         </header>
                             
        
@@ -319,10 +315,10 @@
                 <div id="latestshayari">
                
                <br>
-                <br>
+                <!--<br>
                 <br>
                 <br><br>
-                <br>
+                <br>-->
                  
 <!-- Start WOWSlider.com BODY section -->
 <div id="wowslider-container1">
@@ -475,7 +471,7 @@ lafjon main dard or kalam main noor hota hai.
                
                 <div id="romanticshayari">
  
- <br><br><br><br><br><br>
+ <br>
         
                  
 <h2>Romantic shayari</h2>
@@ -590,7 +586,7 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
                 <div id="bestevershayari">
    
 
- <br><br><br><br><br><br>
+ <br>
 <h2>Best ever shayari</h2>
 <p>आज मेरी क़लम, मुझ पर मेहरबान हुई है ।<br>
 जो बात होंठ नहीं कह पाये, लफ़्ज़ों से बयान हुई है.</p>
@@ -684,7 +680,7 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
                 
                 <div id="duashayari">
   
- <br><br><br><br><br><br>
+ <br>
 <h2>Dua shayari</h2>
                     <p>मेरी दुआ का फ़ख़्त इतना असर हो ।<br>
 तेरी दुआ सुनने को, ख़ुदा हर व़क्त्त मय्यसर हो।</p>
@@ -745,7 +741,7 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
                 <div id="sadshayari">
                 
 
- <br><br><br><br><br><br>
+ <br>
 <h2>Sad shayari</h2>
 <p>मेरे गाँव का मौसम, बड़ा अजीब  है।<br>
 जेठ है मेहरबाँ, और सावन ग़रीब है ।</p>
@@ -901,7 +897,7 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
 
 
 
- <br><br><br><br><br><br>
+ <br>
 <h2>Dil shayari</h2>
  <p>नहीं बिके हम जीवन भर, क़िमत के ख़रिदों से।
            <br>पल भर में निलाम हो गए, मुहोब्बत के मुरिदों से।</p> 
@@ -1014,7 +1010,7 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
                 <div id="hearttouchingshayari">
                 
 
- <br><br><br><br><br><br>
+ <br>
 <h2>Heart touching shayari</h2>
 <p>मेरे गाँव का मौसम, बड़ा अजीब  है।<br>
 जेठ है मेहरबाँ, और सावन ग़रीब है ।</p>
@@ -1162,6 +1158,29 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
                    <input type="checkbox">Notify me of new posts by email.
                 </div>
             </section>
+            <section id="cate">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#latestshayari"> Latest shayari</a></li>
+
+                    <li><a href="#romanticshayari">Romantic</a></li>
+
+                    <li><a href="#bestevershayari">Best ever shayari</a></li>
+
+                    <li><a href="#duashayari">Dua shayari</a></li>
+
+                    <li><a href="#sadshayari">Sad shayari</a></li>
+
+                    <li><a href="#dilshayari">Dil shayari</a></li>
+
+                    <li><a href="#hearttouchingshayari">Heart touching</a></li>
+                    
+
+         
+                
+                </ul>
+              
+            </section>
             
     </main>
     
@@ -1170,7 +1189,26 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
         <p>Copyright @ 2017 - <span>Shayariaman.com</span></p>
     </footer> 
         
-               
+            
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+         <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
         </div>
     </body>
 </html>
