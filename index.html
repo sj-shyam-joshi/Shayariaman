@@ -11,27 +11,25 @@
           
         }
         body{
-           /* width: 1175px;
-            margin: auto;*/  
+            
             padding: 0;
             margin:0;
-            
             height:100%;
-            overflow: hidden;
+            overflow-y:hidden;    
+            
         }
         header{
             
             position: relative;
-            width: 1175px;
-            margin:0 auto;
-            
-            top: 0;
+            margin-right:20px;
+           /* margin-left:20px;*/
+            border-radius: 0 20px 20px 0px;
+             top: 0;
             z-index: 999;
             background-color: white;
-            border-top: 1px solid black;
+           
            /* box-shadow: 2px 2px 25px gray;*/
            
-            
         }
         header img{
             float: left;
@@ -44,7 +42,7 @@
         }
         header h2{
             font-size: 50px;
-            font-family: cursive;
+            font-family: sans-serif;
             margin: 0;
             position: relative;
             top: 5px;
@@ -128,17 +126,8 @@
         
         main{
            
-          /*  display: flex;*/
-            /*background-color: #edd4d8;*/
-            /*margin-top: -27px;*/
-           /* padding-top: 10px;*/
-           
-            /*opacity: 0.9;*/
-             height:100%;
-             position:relative;
-             top:-159px;
-             overflow: auto;
-             z-index: 900;
+          background-color:antiquewhite;
+            
         }
         
           main section:nth-of-type(1) {/*flex: 8;*/
@@ -200,12 +189,12 @@
        
         #cate{
             position: absolute;
-            right: 0px;
+            right: 20px;
             display: inline-block;
             
             
             top: 170px;
-            width: 270px;
+            width: 250px;
            vertical-align: top;
             /*flex: 3;*/
            /* border: solid 1px gray;*/
@@ -258,17 +247,18 @@
             border-radius: 10px;
         }
         
-        .main-and-footer-container {
-        
-         margin:0 auto;
+        .container{
             width:1175px;
-            background-color: #edd4d8;
-            overflow:auto;
-            height:-webkit-calc(100%-158px);
+            margin:0 auto;
+            height:100%;
         }
-  
-
-        </style>
+        #mainAndFooter {
+            overflow:auto;
+            height:100%;
+            position:relative;
+            top:-145px;
+        }
+  </style>
 
 <!-- Start WOWSlider.com HEAD section -->
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -276,13 +266,13 @@
 <!-- End WOWSlider.com HEAD section -->
     </head>
     <body>
-
+     <div class="container">
     <header>
         <img src="images/selfie.JPG">
         <h2 class="shayariaman"><span>Sh</span>a<span>y</span>ari<span>am</span>an.com</h2>        
         <nav>
             <ul>
-                <li><a href="html/home.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="html/shayari%20image.html">SHAYARI IMAGES</a></li>
                 <li><a href="html/whatsappdp.html">WHATSAPP DP</a></li>
                 <li><a href="html/hindi%20jokes.html">FUNNY JOKES</a></li>
@@ -315,13 +305,8 @@
             </section>
         </header>
                             
-        
-        
-   
-        
-
-        <main>
-            <div class="main-and-footer-container">
+    <section id="mainAndFooter">    
+    <main>
             <section>
               
   
@@ -1174,30 +1159,14 @@ hum meer nahi fakeer hai, jinki gazal udaas rahti.</p><br><hr>
                 </div>
             </section>
             
-            
-            
-                
-                <footer>
-        <p>Copyright @ 2017 - <span>Shayariaman.com</span></p>
-        </footer>
-            
-         
-        </div>
-        </main>
+    </main>
     
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    
+     <footer>
+        <p>Copyright @ 2017 - <span>Shayariaman.com</span></p>
+    </footer> 
+        </section>
+               
+        </div>
     </body>
 </html>
