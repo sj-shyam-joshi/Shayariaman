@@ -27,6 +27,14 @@
       margin:0;
       /* overflow-y:hidden;  */  
       }
+       
+     body p{
+           background-color: white;
+         padding: 10px 0;
+         border-radius: 10px;
+       }
+       
+       
       header{
       /*position:sticky;*/
       top: 0;
@@ -167,6 +175,33 @@
       main section:nth-of-type(1) div[id='comments'] textarea:hover{
       box-shadow: 5px 5px 25px black;
       }
+       
+       main section:nth-of-type(1) div[id="blogs"] ul {
+       /*text-align: left;*/
+           
+       }
+       main section:nth-of-type(1) div[id="blogs"] ul li{
+           list-style: none;
+            display: inline-block;
+           
+           
+       }
+       main section:nth-of-type(1) div[id='blogs'] ul li a{
+           text-decoration: none;
+           color: black;
+           position: relative;
+           background-color: white;
+           padding: 4px 46px;
+           border-radius: 10px;
+           box-shadow: 5px 5px 5px gray;
+           display: table-cell;
+           
+       } 
+       main section:nth-of-type(1) div[id='blogs'] a:hover{
+           background-color: #d4d1d1;
+           box-shadow: gray 5px 5px 5px;
+           color: black
+       }
       #cate{
      /* position: sticky;*/
       display: inline-block;
@@ -250,7 +285,7 @@
 <body>
    <div class="container">
       <header class="container">
-         <img src="images/selfie.JPG">
+          <a href="images/selfie.JPG"> <img src="images/selfie.JPG"></a>
          <h2 class="shayariaman"><span>Sh</span>a<span>y</span>ari<span>am</span>an.com</h2>
          <nav>
             <ul>
@@ -273,7 +308,7 @@
                   <br><br>
                   <br>-->
                <!-- Start WOWSlider.com BODY section -->
-               <div id="wowslider-container1">
+              <!-- <div id="wowslider-container1">
                   <div class="ws_images">
                      <ul>
                         <li><img src="data1/images/background_cars_1.jpg" alt="background cars (1)" title="background cars (1)" id="wows1_0"/></li>
@@ -300,14 +335,14 @@
                   <div class="ws_shadow"></div>
                </div>
                <script type="text/javascript" src="engine1/wowslider.js"></script>
-               <script type="text/javascript" src="engine1/script.js"></script>
+               <script type="text/javascript" src="engine1/script.js"></script>-->
                <!-- End WOWSlider.com BODY section -->
                <h2>Latest shayari</h2>
                <!--<img src="images/Monushayari.jpg">-->
                <p>कैसी रिवाज है ख़ुदा, तेरे इस जहान की।<br>
                   धँधा करे ताजिर, और बदनामी दुकान की।
                </p>
-               <img src="images/shyam%20joshi.jpg" class="images">
+             <a href="images/shyam%20joshi.jpg" target="_blank"><img src="images/shyam%20joshi.jpg" class="images"></a>
                <p>Kaisi riwaz hai khuda, tere is jahaan ki.<br>
                   dhandha kare tazir or badnaami dukaan ki.
                </p>
@@ -461,16 +496,28 @@
                </p>
                <br>
                <hr>
+                
+               
+                
             </div>
             <!------------------------Romantic shayari---------------------------->
-             <br>
-             <br>
-             <br>
-             <br>
+           
              <br>
             <div id="romanticshayari">
                <br>
                <h2>Romantic shayari</h2>
+                 <div id="blogs">
+                  <ul>
+               <li><a href="#latestshayari"> Latest shayari</a></li>
+               <li><a href="#romanticshayari">Romantic</a></li>
+               <li><a href="#bestevershayari">Best ever shayari</a></li>
+               <li><a href="#duashayari">Dua shayari</a></li>
+               <li><a href="#sadshayari">Sad shayari</a></li>
+               <li><a href="#dilshayari">Dil shayari</a></li>
+               <li><a href="#hearttouchingshayari">Heart touching</a></li>
+            </ul>
+                </div>
+                
                <p>नहीं बिके हम जीवन भर, क़िमत के ख़रिदों से।
                   <br>पल भर में निलाम हो गए, मुहोब्बत के मुरिदों से।
                </p>
@@ -611,6 +658,19 @@
             <div id="bestevershayari">
                <br>
                <h2>Best ever shayari</h2>
+                
+                 <div id="blogs">
+                  <ul>
+               <li><a href="#latestshayari"> Latest shayari</a></li>
+               <li><a href="#romanticshayari">Romantic</a></li>
+               <li><a href="#bestevershayari">Best ever shayari</a></li>
+               <li><a href="#duashayari">Dua shayari</a></li>
+               <li><a href="#sadshayari">Sad shayari</a></li>
+               <li><a href="#dilshayari">Dil shayari</a></li>
+               <li><a href="#hearttouchingshayari">Heart touching</a></li>
+            </ul>
+                </div>
+                
                <p>आज मेरी क़लम, मुझ पर मेहरबान हुई है ।<br>
                   जो बात होंठ नहीं कह पाये, लफ़्ज़ों से बयान हुई है.
                </p>
@@ -738,9 +798,27 @@
                <br>
                <hr>
             </div>
+             
+             <!--------------------------------Dua shayari------------------------------->
+             
             <div id="duashayari">
                <br>
+                
                <h2>Dua shayari</h2>
+                
+                 
+                 <div id="blogs">
+                  <ul>
+               <li><a href="#latestshayari"> Latest shayari</a></li>
+               <li><a href="#romanticshayari">Romantic</a></li>
+               <li><a href="#bestevershayari">Best ever shayari</a></li>
+               <li><a href="#duashayari">Dua shayari</a></li>
+               <li><a href="#sadshayari">Sad shayari</a></li>
+               <li><a href="#dilshayari">Dil shayari</a></li>
+               <li><a href="#hearttouchingshayari">Heart touching</a></li>
+            </ul>
+                </div>
+                
                <p>मेरी दुआ का फ़ख़्त इतना असर हो ।<br>
                   तेरी दुआ सुनने को, ख़ुदा हर व़क्त्त मय्यसर हो।
                </p>
@@ -826,7 +904,23 @@
             <!------------------------------sad shayari----------------------------->
             <div id="sadshayari">
                <br>
+               
+                
                <h2>Sad shayari</h2>
+                
+                 
+                 <div id="blogs">
+                  <ul>
+               <li><a href="#latestshayari"> Latest shayari</a></li>
+               <li><a href="#romanticshayari">Romantic</a></li>
+               <li><a href="#bestevershayari">Best ever shayari</a></li>
+               <li><a href="#duashayari">Dua shayari</a></li>
+               <li><a href="#sadshayari">Sad shayari</a></li>
+               <li><a href="#dilshayari">Dil shayari</a></li>
+               <li><a href="#hearttouchingshayari">Heart touching</a></li>
+            </ul>
+                </div>
+                
                <p>मेरे गाँव का मौसम, बड़ा अजीब  है।<br>
                   जेठ है मेहरबाँ, और सावन ग़रीब है ।
                </p>
@@ -1032,7 +1126,23 @@
             <!--------------------------------Dil shayari---------------------------------------->   
             <div id="dilshayari">
                <br>
+               
+                
                <h2>Dil shayari</h2>
+                
+                 
+                 <div id="blogs">
+                  <ul>
+               <li><a href="#latestshayari"> Latest shayari</a></li>
+               <li><a href="#romanticshayari">Romantic</a></li>
+               <li><a href="#bestevershayari">Best ever shayari</a></li>
+               <li><a href="#duashayari">Dua shayari</a></li>
+               <li><a href="#sadshayari">Sad shayari</a></li>
+               <li><a href="#dilshayari">Dil shayari</a></li>
+               <li><a href="#hearttouchingshayari">Heart touching</a></li>
+            </ul>
+                </div>
+                
                <p>नहीं बिके हम जीवन भर, क़िमत के ख़रिदों से।
                   <br>पल भर में निलाम हो गए, मुहोब्बत के मुरिदों से।
                </p>
@@ -1172,7 +1282,23 @@
             <!-- -----------------------------Heart touching Shayari------------------------------->
             <div id="hearttouchingshayari">
                <br>
+                
+                
+                
                <h2>Heart touching shayari</h2>
+                
+                 <div id="blogs">
+                  <ul>
+               <li><a href="#latestshayari"> Latest shayari</a></li>
+               <li><a href="#romanticshayari">Romantic</a></li>
+               <li><a href="#bestevershayari">Best ever shayari</a></li>
+               <li><a href="#duashayari">Dua shayari</a></li>
+               <li><a href="#sadshayari">Sad shayari</a></li>
+               <li><a href="#dilshayari">Dil shayari</a></li>
+               <li><a href="#hearttouchingshayari">Heart touching</a></li>
+            </ul>
+                </div>
+                
                <p>मेरे गाँव का मौसम, बड़ा अजीब  है।<br>
                   जेठ है मेहरबाँ, और सावन ग़रीब है ।
                </p>
